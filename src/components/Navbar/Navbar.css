@@ -1,0 +1,21 @@
+.btn-wipe {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-wipe::after {
+  /* content: ""; */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 100%;
+  background: #1e1a3d;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in;
+  z-index: 0;
+}
+
+.btn-wipe:hover::after {
+  width: 100%;
+}
