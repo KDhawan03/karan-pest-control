@@ -1,14 +1,15 @@
 import './App.css'
-import  Navbar  from "./components/Navbar/Navbar.jsx";
-// import Hero from "./components/Hero.jsx";
+import { Toaster } from 'react-hot-toast'
+import Navbar from "./components/Navbar/Navbar.jsx";
+import GetAQuote from './components/GetAQuote'
 
 function App() {
-
-
   return (
     <>
-      <Navbar/>
-      {/* <Hero/> */}
+      <Toaster position="top-center" />
+      <Navbar />
+      <GetAQuote />
+      {/* <Hero /> */}
     </>
   )
 }
