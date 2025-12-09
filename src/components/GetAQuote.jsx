@@ -47,7 +47,7 @@ export default function GetAQuote() {
                     {/* Left: form */}
                     <div className="p-10 lg:p-14">
                         <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight">
-                            Effective Pest Solutions - <span className="text-emerald-600">Reach Out Today!</span>
+                            Effective Pest Solutions - <span className="text-primary">Reach Out Today!</span>
                         </h2>
 
                         <form onSubmit={handleSubmit} className="mt-8">
@@ -92,7 +92,7 @@ export default function GetAQuote() {
                                     <button
                                         type="submit"
                                         disabled={submitted}
-                                        className="inline-flex items-center gap-3 rounded-full bg-emerald-600 px-6 py-3 text-white font-semibold shadow hover:bg-emerald-700 transition disabled:opacity-50 disabled:cursor-not-allowed"
+                                        className="bg-[#299B46] hover:bg-[#1e1a3d] text-white font-semibold px-6 py-3 rounded-xl transition duration-400 transform hover:scale-105 btn-wipe"
                                     >
                                         <span>Send Message</span>
                                     </button>
@@ -102,7 +102,7 @@ export default function GetAQuote() {
                             </div>
                         </form>
 
-                        
+
                     </div>
 
                     {/* Right: image */}
