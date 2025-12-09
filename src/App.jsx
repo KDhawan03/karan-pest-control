@@ -7,8 +7,7 @@ import GetAQuote from './components/GetAQuote'
 function App() {
   return (
     <>
-      <Toaster position="top-center" />
-      
+      <Toaster position="top-center" />      
       <GetAQuote />
       
     </>
