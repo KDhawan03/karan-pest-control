@@ -84,15 +84,14 @@ function Hero() {
         <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem', width: '100%' }}>
           <div style={{ maxWidth: '48rem' }}>
             {/* Bold Headline */}
-            <h1 style={{
-              fontSize: 'clamp(2rem, 5vw, 3.75rem)',
-              fontWeight: 'bold',
-              color: 'white',
-              marginBottom: '1.5rem',
-              lineHeight: '1.2'
-            }}>
-              Safe, Fast & Guaranteed Pest Control for Your Home or Business.
-            </h1>
+              <h1 className="text-[#fff]" style={{
+                fontSize: 'clamp(2rem, 5vw, 3.75rem)',
+                fontWeight: 'bold',
+                marginBottom: '1.5rem',
+                lineHeight: '1.2'
+              }}>
+                Safe, Fast & Guaranteed Pest Control for Your Home or Business.
+              </h1>
 
             {/* Paragraph */}
             <p style={{
@@ -107,7 +106,7 @@ function Hero() {
 
             {/* Book a Service Button */}
             <a
-              href="#contact"
+              href="#quote"
               style={{
                 display: 'inline-block',
                 backgroundColor: '#299B46',
