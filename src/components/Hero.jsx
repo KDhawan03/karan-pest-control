@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useMouse } from './CursorAnimation/MouseContext';
 
 function Hero() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -16,6 +17,8 @@ function Hero() {
     
     return () => clearInterval(interval); 
   }, []);
+
+  const { cursorChangeHandler } = useMouse();
 
   return (
     <section 
@@ -88,8 +91,12 @@ function Hero() {
                 fontSize: 'clamp(2rem, 5vw, 3.75rem)',
                 fontWeight: 'bold',
                 marginBottom: '1.5rem',
-                lineHeight: '1.2'
-              }}>
+                lineHeight: '1.2',
+                cursor: 'none'
+              }}
+              onMouseEnter={() => cursorChangeHandler("text-mode")} 
+              onMouseLeave={() => cursorChangeHandler("default")}
+              >
                 Safe, Fast & Guaranteed Pest Control for Your Home or Business.
               </h1>
 
