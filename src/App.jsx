@@ -14,8 +14,6 @@ function App() {
       <Hero/>
       <Reviews />
       <GetAQuote />
-      {/* <Hero /> */}
-
     </>
   )
 }

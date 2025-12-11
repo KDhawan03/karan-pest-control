@@ -6,7 +6,7 @@ function Hero() {
   const images = [
     '/images/pest-1.jpg',
     '/images/pest-2.jpg',
-    '/images/pest-3.jpg'
+    // '/images/pest-3.jpg'
   ];
 
   useEffect(() => {
