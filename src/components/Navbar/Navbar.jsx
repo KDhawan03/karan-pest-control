@@ -11,12 +11,21 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md fixed w-full top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-24">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <h1 className="text-3xl font-bold text-[#1e1a3d]">KaranPestControl</h1>
-          </div>
-
+          <a href="#home">
+            <div className="flex-shrink-0">
+              <img 
+                src="/images/logo.png" 
+                alt="Karan Pest Control Logo" 
+                className="h-24 w-auto object-contain"
+                style={{
+                  filter: 'drop-shadow(0 0 0 white) brightness(1.1) contrast(1.2)',
+                  mixBlendMode: 'multiply'
+                }}
+              />
+            </div>
+          </a>
           {/* Navigation links */}
           <div className="hidden md:flex space-x-8">
             <a href="#home" className="text-[#1e1a3d] hover:text-[#299B46] transition duration-300">
@@ -38,9 +47,11 @@ const Navbar = () => {
 
           {/* Get a quote */}
           <div className="hidden md:block">
-            <button className="bg-[#299B46] hover:bg-[#1e1a3d] text-white font-semibold px-6 py-2 rounded-full transition duration-400 transform hover:scale-105 btn-wipe">
-              Get a Quote
-            </button>
+            <a href="#quote">
+              <button className="bg-[#299B46] hover:bg-[#1e1a3d] text-white font-semibold px-6 py-2 rounded-full transition duration-400 transform hover:scale-105 btn-wipe">
+                Get a Quote
+              </button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -103,9 +114,11 @@ const Navbar = () => {
             >
               Contact Us
             </a>
-            <button className="w-full mt-2 bg-[#299B46] hover:bg-[#1e1a3d] text-white font-semibold px-6 py-2 rounded-full transition duration-300">
-              Get a Quote
-            </button>
+            <a href="#quote">
+              <button className="w-full mt-2 bg-[#299B46] hover:bg-[#1e1a3d] text-white font-semibold px-6 py-2 rounded-full transition duration-300">
+                Get a Quote
+              </button>
+            </a>
           </div>
         </div>
       )}

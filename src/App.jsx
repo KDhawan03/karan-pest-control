@@ -12,8 +12,8 @@ function App() {
       <Toaster position="top-center" />
       <Navbar/>
       <Hero/>
-      <GetAQuote />
       <Reviews />
+      <GetAQuote />
       {/* <Hero /> */}
 
     </>
