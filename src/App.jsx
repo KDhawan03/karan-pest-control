@@ -5,6 +5,8 @@ import ChooseUs from "./components/ChooseUs/chooseUs.jsx"
 import Services from './components/Services/Services.jsx';
 import { Toaster } from 'react-hot-toast'
 import GetAQuote from './components/GetAQuote'
+import Reviews from './components/Reviews.jsx';
+
 import Hero from "./components/Hero.jsx";
 
 function App() {
@@ -15,10 +17,13 @@ function App() {
       {/* <Hero/> */}
       
       <Hero/>
-
+      <Services />
       <ChooseUs />
-      <Services></Services>
       <GetAQuote />
+      <Reviews />
+      <GetAQuote />
+      {/* <Hero /> */}
+
 
     </>
   )
