@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './chooseUs.css';
+import { useMouse } from '../CursorAnimation/MouseContext';
 
 const chooseUsData = [
   
@@ -38,6 +39,8 @@ const chooseUsData = [
 const ChooseUs = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
 
+  const { cursorChangeHandler } = useMouse();
+
   return (
     <section className="chooseUs-section">
       <div className="chooseUs-container">
@@ -47,7 +50,10 @@ const ChooseUs = () => {
             Why Choose Us?
           </button>
 
-          <h2 className="choose-title">
+          <h2 className="choose-title cursor-none"
+              onMouseEnter={() => cursorChangeHandler("text-mode")}
+              onMouseLeave={() => cursorChangeHandler("default")}
+                    >
             What Makes Us The Best, <span className="text-[#299B46]">Choice For You</span>
           </h2>
 
