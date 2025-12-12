@@ -3,8 +3,10 @@ import { Pagination, Autoplay } from "swiper/modules";
 import {  StarFilled  } from '@ant-design/icons';
 import "swiper/css";
 import "swiper/css/pagination";
+import { useMouse } from './CursorAnimation/MouseContext';
 
 export default function Testimonials() { 
+    const { cursorChangeHandler } = useMouse();
     const reviews = [
         {
             name: "Deepak Rana",
@@ -53,11 +55,14 @@ export default function Testimonials() {
 
 
     return (
-        <section className="bg-white py-20">
+        <section id = "reviews" className="bg-white py-20">
             <div className="max-w-7xl mx-auto px-6">
 
                 {/* Heading */}
-                <h2 className="text-center text-4xl font-extrabold text-gray-900">
+                <h2 className="text-center text-4xl font-extrabold text-gray-900 cursor-none"
+                    onMouseEnter={() => cursorChangeHandler("text-mode")}
+                    onMouseLeave={() => cursorChangeHandler("default")}
+                >
                     What Our Customers Say About <br />
                     <span className="text-[#299B46] ">
                         Our Pest Control Services

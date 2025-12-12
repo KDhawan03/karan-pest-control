@@ -8,28 +8,28 @@ import GetAQuote from './components/GetAQuote'
 import Reviews from './components/Reviews.jsx';
 import Hero from "./components/Hero.jsx";
 import Faq from './components/Faq.jsx';
+import { MouseProvider } from './components/CursorAnimation/MouseContext.jsx';
+import Cursor from './components/CursorAnimation/Cursor.jsx';
 
 function App() {
   return (
-    <>
-      <Toaster position="top-center" />
-      <Navbar/>
-      {/* <Hero/> */}
-      
-      <Hero/>
-      <Services />
-      <ChooseUs />
-      <GetAQuote />
-      <Reviews />
+    <MouseProvider>
+      <Cursor />
+      <>
+        <Toaster position="top-center" />
+        <Navbar/>
+        
+        <Hero/>
+        <Services />
+        <ChooseUs />
+        <GetAQuote />
+        <Reviews />
 
-      <Faq />
+        <Faq />
 
-      <GetAQuote />
-
-      {/* <Hero /> */}
-
-
-    </>
+        <GetAQuote />
+      </>
+    </MouseProvider>
   )
 }
 

@@ -1,7 +1,9 @@
 import React from 'react'
 import ServicesCard from "./ServicesCard"
+import { useMouse } from '../CursorAnimation/MouseContext';
 
 const Services = () => {
+    const { cursorChangeHandler } = useMouse();
     return (
         <div className="grid grid-cols-1  gap-6 lg:p-8 bg-gray-100 min-h-screen">
             <div className="chooseUs-header w-full">
@@ -10,7 +12,10 @@ const Services = () => {
                     Services
                 </button>
 
-                <h2 className="choose-title">
+                <h2 className="choose-title cursor-none" 
+                    onMouseEnter={() => cursorChangeHandler("text-mode")}
+                    onMouseLeave={() => cursorChangeHandler("default")}
+                >
                     Effective & Reliable  <span className="text-[#299B46]">Pest Control Services</span>
                 </h2>
 
