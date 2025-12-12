@@ -1,0 +1,13 @@
+.rotate-slow {
+  animation: rotateIcon 4s linear infinite;
+  background-color: rgb(232, 229, 237);
+}
+
+@keyframes rotateIcon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
