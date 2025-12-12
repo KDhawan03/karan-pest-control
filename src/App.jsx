@@ -8,6 +8,7 @@ import GetAQuote from './components/GetAQuote'
 import Reviews from './components/Reviews.jsx';
 import Hero from "./components/Hero.jsx";
 import Faq from './components/Faq.jsx';
+import AboutUs from './components/AboutUs/AboutUs.jsx';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       {/* <Hero/> */}
       
       <Hero/>
+      <AboutUs/>
       <Services />
       <ChooseUs />
       <GetAQuote />
