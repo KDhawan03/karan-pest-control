@@ -95,10 +95,15 @@ export default function GetAQuote() {
                                     >
                                         <option value="" className="  ">Select Service</option>
                                         <option value="Cockroach Control">Cockroach Control</option>
+                                        <option value="Spider Control">Spider Control</option>
                                         <option value="Termite Treatment">Termite Treatment</option>
-                                        <option value="Rodent Control">Rodent Control</option>
+                                        <option value="Rat & Rodent Control">Rat & Rodent Control</option>
                                         <option value="Bedbug Treatment">Bedbug Treatment</option>
                                         <option value="Mosquito Control">Mosquito Control</option>
+                                        <option value="Ant & Fly Control">Ant & Fly Control</option>
+                                        <option value="Mosquito Fogging">Mosquito Fogging</option>
+                                        <option value="Home Disinfection">Home Disinfection</option>
+                                        <option value="Others">Others</option>
                                     </select>
 
                                     {errors.service && (

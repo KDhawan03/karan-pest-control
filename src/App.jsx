@@ -1,6 +1,5 @@
 import './App.css'
 import  Navbar  from "./components/Navbar/Navbar.jsx";
-// import Hero from "./components/Hero.jsx";
 import ChooseUs from "./components/ChooseUs/chooseUs.jsx"
 import Services from './components/Services/Services.jsx';
 import { Toaster } from 'react-hot-toast'
@@ -22,7 +21,6 @@ function App() {
         <Hero/>
         <Services />
         <ChooseUs />
-        <GetAQuote />
         <Reviews />
 
         <Faq />
