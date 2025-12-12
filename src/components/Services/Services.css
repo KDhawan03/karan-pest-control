@@ -1,0 +1,16 @@
+.services-header{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 60px;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+/* .rtl-scroll {
+    direction: rtl;         Scroll direction RTL
+    scroll-behavior: smooth;
+}
+
+.rtl-scroll > div {
+    direction: ltr;         Cards ko normal direction dena
+} */
