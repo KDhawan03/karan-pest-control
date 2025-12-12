@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { toast } from 'react-hot-toast';
+import { useMouse } from './CursorAnimation/MouseContext';
 
 export default function GetAQuote() {
+    const { cursorChangeHandler } = useMouse();
     const [formData, setFormData] = useState({ name: "", phone: "", service: "", message: "" });
     const [errors, setErrors] = useState({});
     const [submitted, setSubmitted] = useState(false);
@@ -48,7 +50,10 @@ export default function GetAQuote() {
 
                     {/* Left: form */}
                     <div className="p-10 lg:p-14">
-                        <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight">
+                        <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight" 
+                            onMouseEnter={() => cursorChangeHandler("text-mode")}
+                            onMouseLeave={() => cursorChangeHandler("default")}
+                        >
                             Effective Pest Solutions - <span className="text-primary">Reach Out Today!</span>
                         </h2>
 
