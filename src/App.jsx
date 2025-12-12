@@ -5,12 +5,22 @@ import GetAQuote from './components/GetAQuote'
 
 function App() {
   return (
-    <>
-      <Toaster position="top-center" />
-      <Navbar />
-      <GetAQuote />
-      {/* <Hero /> */}
-    </>
+    <MouseProvider>
+      <Cursor />
+      <>
+        <Toaster position="top-center" />
+        <Navbar/>
+        
+        <Hero/>
+        <Services />
+        <ChooseUs />
+        <Reviews />
+
+        <Faq />
+
+        <GetAQuote />
+      </>
+    </MouseProvider>
   )
 }
 
