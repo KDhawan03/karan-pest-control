@@ -1,9 +1,11 @@
 import React from "react";
 import "./About.css";
+import { useMouse } from '../CursorAnimation/MouseContext';
 
 const AboutUs = () => {
+    const { cursorChangeHandler } = useMouse();
     return (
-        <div className="w-full bg-white py-20 px-6 lg:px-20 grid lg:grid-cols-2 gap-16 items-center">
+        <div id = "about" className="w-full bg-white py-20 px-6 lg:px-20 grid lg:grid-cols-2 gap-16 items-center">
 
             {/* LEFT CONTENT */}
             <div className="space-y-6">
@@ -12,7 +14,10 @@ const AboutUs = () => {
                     About Us
                 </button>
 
-                <h1 className="text-3xl lg:text-4xl font-extrabold text-gray-900 leading-snug">
+                <h1 className="text-3xl lg:text-4xl font-extrabold text-gray-900 leading-snug"
+                    onMouseEnter={() => cursorChangeHandler("text-mode")}
+                    onMouseLeave={() => cursorChangeHandler("default")}
+                >
                     Trusted Experts Delivering Pest Control <span style={{ color: "#299B46" }}>You Can Count On</span> 
                 </h1>
 

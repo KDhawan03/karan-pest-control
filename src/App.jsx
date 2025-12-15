@@ -28,7 +28,7 @@ function App() {
         <Services />
         <ChooseUs />
         <Reviews />
-
+        <GetAQuote />
         <Faq />
 
 
