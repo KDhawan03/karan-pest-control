@@ -3,7 +3,7 @@ import ServicesCard from "./ServicesCard"
 
 const Services = () => {
     return (
-        <div className="grid grid-cols-1  gap-6 lg:p-8 bg-gray-100 min-h-screen">
+        <div id='services' className="grid grid-cols-1  gap-6 lg:p-8 bg-gray-100 min-h-screen">
             <div className="chooseUs-header w-full">
                 <button className="bg-[#299B46] text-white px-5 py-2 rounded-lg font-medium 
                    hover:bg-green-700 transition duration-300 shadow-sm hover:shadow">
