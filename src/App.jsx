@@ -10,20 +10,27 @@ import Faq from './components/Faq.jsx';
 import Footer from './components/Footer.jsx';
 import ContactUs from './components/ContactUs/ContactUs.jsx';
 
+import AboutUs from './components/AboutUs/AboutUs.jsx';
+import { MouseProvider } from './components/CursorAnimation/MouseContext.jsx';
+import Cursor from './components/CursorAnimation/Cursor.jsx';
+
+
 function App() {
   return (
-    <>
-      <Toaster position="top-center" />
-      <Navbar/>
-      {/* <Hero/> */}
-      
-      <Hero/>
-      <Services />
-      <ChooseUs />
-      <GetAQuote />
-      <Reviews />
+    <MouseProvider>
+      <Cursor />
+      <>
+        <Toaster position="top-center" />
+        <Navbar/>
+        
+        <Hero/>
+        <AboutUs/>
+        <Services />
+        <ChooseUs />
+        <Reviews />
 
-      <Faq />
+        <Faq />
+
 
       <Footer />
       <ContactUs/>
@@ -32,6 +39,10 @@ function App() {
 
 
     </>
+
+      
+    </MouseProvider>
+
   )
 }
 
