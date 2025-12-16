@@ -26,6 +26,7 @@ function App() {
         <Hero/>
         <AboutUs/>
         <Services />
+        <GetAQuote />
         <ChooseUs />
         <Reviews />
 

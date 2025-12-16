@@ -4,121 +4,109 @@ import {
   InstagramOutlined,
   TwitterOutlined,
 } from "@ant-design/icons";
-import Support from "./Support.jsx";
 
-const ContactUs = () => {
+const Footer = () => {
   return (
-    <footer id="contact" className=" bg-gradient-to-r from-[#1e1a3d] to-[#299B46] text-white">
-      
+    <footer id="contact" className="bg-gradient-to-r from-[#1e1a3d] to-[#299B46] text-white">
       <div className="max-w-7xl mx-auto px-6 py-14">
-
         {/* Top Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
 
-          {/* Logo, Address & Map */}
-          <div className="space-y-5 lg:col-span-2">
-            <h2 className="text-4xl font-bold leading-tight tracking-wide">
+          {/* Logo & Address */}
+          <div className="lg:col-span-2">
+            <h2 className="text-3xl font-bold mb-4">
               Karan
-              <span className="block text-sm tracking-[0.35em] font-light mt-2 text-white/90">
+              <span className="block text-sm tracking-widest font-light">
                 PEST CONTROL
               </span>
             </h2>
 
-            <p className="text-base leading-7 text-white/90 max-w-sm">
-              Karan Pest Control Near You <br />
-              <span className="font-semibold">Phone:</span> +91 7355169038 <br />
+            <p className="text-sm leading-6 mb-4">
+              Karan Pest Control Near You
+            </p>
+
+            <p className="text-sm">
+              <span className="font-semibold">Phone:</span> +91 7355169038
+            </p>
+            <p className="text-sm mt-1">
               183 Y-1, Shankracharya Nagar <br />
               Kanpur, Uttar Pradesh
             </p>
+          </div>
 
-            {/* Google Map */}
-            <div className="rounded-xl overflow-hidden border border-white/20 shadow-lg hover:scale-[1.02] transition-transform duration-300 ">
+          {/* Pest Control */}
+          <div>
+            <h3 className="font-semibold mb-4">Pest Control</h3>
+            <ul className="space-y-2 text-sm">
+              <li>Ant Control</li>
+              <li>Termite Protection</li>
+              <li>Bed Bug Treatment</li>
+              <li>Cockroach Control</li>
+              <li>Rat & Rodent Management</li>
+            </ul>
+          </div>
+
+          {/* About Us */}
+          <div>
+            <h3 className="font-semibold mb-4">About Us</h3>
+            <ul className="space-y-2 text-sm">
+              <li>Review</li>
+              <li>Our Services</li>
+              <li>FAQ</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+
+          {/* Map (WIDTH IMPROVED HERE ✅) */}
+          <div className="flex justify-start lg:justify-end">
+            <div
+              className="w-full max-w-sm md:max-w-md lg:max-w-lg 
+                         rounded-xl overflow-hidden border border-white/20 shadow-lg"
+            >
               <iframe
                 title="Karan Pest Control Location"
                 src="https://www.google.com/maps?q=Shankracharya%20Nagar%20Kanpur&output=embed"
-                className="  w-full h-44 md:h-48 lg:h-52"
+                className="w-full h-44 md:h-48 lg:h-52"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
           </div>
 
-          {/* Pest Control */}
-          <div className="lg:col-span-1">
-            <h3 className="font-semibold text-xl mb-5">Pest Control</h3>
-            <ul className="space-y-3 text-base text-white/90">
-              {[
-                "Ant Control",
-                "Termite Protection",
-                "Bed Bug Treatment",
-                "Cockroach Control",
-                "Rat & Rodent Management",
-              ].map((item) => (
-                <li
-                  key={item}
-                  className="hover:text-white transition cursor-pointer"
-                >
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* About Us */}
-          <div className="lg:col-span-1">
-            <h3 className="font-semibold text-xl mb-5">About Us</h3>
-            <ul className="space-y-3 text-base text-white/90">
-              {["Review", "Our Services", "FAQ", "Contact Us"].map((item) => (
-                <li
-                  key={item}
-                  className="hover:text-white transition cursor-pointer"
-                >
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Support Form */}
-          <div className="lg:col-span-2">
-            <Support />
-          </div>
         </div>
 
-        {/* Social Media */}
-        <div className="mt-12 flex flex-col md:flex-row items-center justify-between gap-6">
-          <h3 className="font-semibold text-lg">Follow Us</h3>
-
-          <div className="flex items-center gap-4">
-            <a className="w-11 h-11 flex items-center justify-center rounded-full bg-white/10 hover:scale-110 hover:bg-blue-600 transition-all duration-300">
-              <FacebookOutlined className="text-lg" />
+        {/* Follow Us */}
+        <div className="mt-12 flex items-center justify-end gap-4">
+          <span className="mr-4 text-sm">Follow Us</span>
+          <div className="flex gap-3">
+            <a className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30">
+              <FacebookOutlined />
             </a>
-            <a className="w-11 h-11 flex items-center justify-center rounded-full bg-white/10 hover:scale-110 hover:bg-pink-500 transition-all duration-300">
-              <InstagramOutlined className="text-lg" />
+            <a className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30">
+              <InstagramOutlined />
             </a>
-            <a className="w-11 h-11 flex items-center justify-center rounded-full bg-white/10 hover:scale-110 hover:bg-sky-500 transition-all duration-300">
-              <TwitterOutlined className="text-lg" />
+            <a className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30">
+              <TwitterOutlined />
             </a>
           </div>
         </div>
 
-        {/* Bottom Footer */}
-        <div className="border-t border-white/20 mt-12 pt-5 text-center text-sm text-white/80">
-          © 2025 Karan Pest Control. All rights reserved.
-          <div className="mt-2 space-x-3">
-            <span className="hover:text-white cursor-pointer">Careers</span>
+        {/* Bottom Bar */}
+        <div className="mt-10 border-t border-white/20 pt-6 text-center text-sm">
+          <p>© 2025 Karan Pest Control. All rights reserved.</p>
+          <div className="mt-2 flex justify-center gap-4 text-xs">
+            <span>Careers</span>
             <span>|</span>
-            <span className="hover:text-white cursor-pointer">Terms</span>
+            <span>Terms</span>
             <span>|</span>
-            <span className="hover:text-white cursor-pointer">Privacy</span>
+            <span>Privacy</span>
             <span>|</span>
-            <span className="hover:text-white cursor-pointer">Sitemap</span>
+            <span>Sitemap</span>
           </div>
         </div>
-
       </div>
     </footer>
   );
 };
 
-export default ContactUs;
+export default Footer;
