@@ -29,7 +29,7 @@ function App() {
         <GetAQuote />
         <ChooseUs />
         <Reviews />
-
+        <GetAQuote />
         <Faq />
 
 

@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { toast } from 'react-hot-toast';
-import img from '../../public/images/get_a_quet.png';
+import img from '/images/get_a_quet.png';
 import { useMouse } from './CursorAnimation/MouseContext';
-
+import emailjs from '@emailjs/browser'
 
 export default function GetAQuote() {
     const { cursorChangeHandler } = useMouse();
-    const [formData, setFormData] = useState({ name: "", phone: "", service: "", message: "" });
+    const [formData, setFormData] = useState({ name: "", phone: "", email: "", service: "", message: "" });
     const [errors, setErrors] = useState({});
     const [submitted, setSubmitted] = useState(false);
 
@@ -35,15 +35,34 @@ export default function GetAQuote() {
             toast.error(Object.values(e)[0]);
             return;
         }
+        
+        const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+        const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+        const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-        console.log("Quote request:", formData);
+        const templateParams = {
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            service: formData.service,
+            message: formData.message,
+            time: new Date().toLocaleString()
+        }
         setSubmitted(true);
-        toast.success('Request sent! We will contact you soon.');
 
-        setTimeout(() => {
-            setSubmitted(false);
-            setFormData({ name: "", phone: "", service: "", message: "" });
-        }, 2000);
+        emailjs.send(serviceId, templateId, templateParams, publicKey)
+            .then((response) => {
+                // console.log('SUCCESS!', response.status, response.text);
+                toast.success('Request sent! We will contact you soon.');
+                setFormData({ name: "", phone: "", email: "", service: "", message: "" });
+                setSubmitted(false);
+            })
+            .catch((err) => {
+                // console.error('FAILED...', err);
+                toast.error("Failed to send. Please check your connection.");
+                setSubmitted(false);
+            });
+
     };
 
     return (
