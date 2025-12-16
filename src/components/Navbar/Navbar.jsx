@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Navbar.css'
+import {FloatingWhatsApp} from "react-floating-whatsapp";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,12 +10,13 @@ const Navbar = () => {
   };
 
   return (
+    <>
     <nav className="bg-white shadow-md fixed w-full top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-24">
           {/* Logo */}
           <a href="#home">
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 -ml-24">
               <img 
                 src="/images/logo.png" 
                 alt="Karan Pest Control Logo" 
@@ -123,6 +125,17 @@ const Navbar = () => {
         </div>
       )}
     </nav>
+    <FloatingWhatsApp
+      phoneNumber="+919968969900"
+      accountName="Karan Pest Control Services"
+      allowClickAway
+      chatMessage="Hello, how can we help you?"
+      avatar="./images/logo.png"
+      className="fixed bottom-4 right-4 z-50"
+      notification
+      notificationSound
+    />
+    </>
   );
 };
 
