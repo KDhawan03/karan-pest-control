@@ -2,8 +2,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 32px;
-  height: 32px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
@@ -12,8 +12,8 @@
 }
 
 .cursor.default {
-  /* background-color: #0F9D58; Green dot */
-  /* mix-blend-mode: normal; */
+  background-color: #0F9D58;
+  mix-blend-mode: normal;
 }
 
 .cursor.text-mode {

@@ -57,8 +57,8 @@ const servicesData = [
           content: "• Web Removal : Vacuuming & manual clearing\n• Residual Sprays : Long-lasting protection on surfaces\n• Dust Application : Penetrates wall voids & cracks\n• Perimeter Treatment: Outdoor barrier prevents entry"
         },
         {
-          heading: "Safe Indoor Treatment",
-          content: "Low-odour, non-staining formulas safe for homes. Treatment avoids food areas. Quick-drying with no sticky residue on furniture."
+          "heading": "Safe Indoor Treatment",
+          "content": "Our low-odour, non-staining treatment formulas are specially designed to be safe for use inside homes. The application process carefully avoids food preparation and storage areas to maintain hygiene. Treatments are quick-drying, allowing normal activities to resume soon after service. No sticky residue is left on furniture, walls, or floors. The methods used are safe for families and pets when applied as directed. This ensures effective pest control without compromising indoor comfort or safety."
         },
         {
           heading: "Spider Prevention Tips",

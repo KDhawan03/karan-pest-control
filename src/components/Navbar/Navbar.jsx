@@ -32,7 +32,7 @@ const Navbar = () => {
               Home
             </a>
             <a href="#about" className="text-[#1e1a3d] hover:text-[#299B46] transition duration-300">
-              About
+              About Us
             </a>
             <a href="#services" className="text-[#1e1a3d] hover:text-[#299B46] transition duration-300">
               Our Services

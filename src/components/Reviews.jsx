@@ -55,7 +55,11 @@ export default function Testimonials() {
 
 
     return (
+
+        
+
         <section id = "reviews" className="bg-white py-20">
+
             <div className="max-w-7xl mx-auto px-6">
 
                 {/* Heading */}

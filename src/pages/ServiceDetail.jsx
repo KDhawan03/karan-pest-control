@@ -1,6 +1,8 @@
 import Navbar from "../components/Navbar/Navbar";
 import { useNavigate, useParams } from "react-router-dom";
 import servicesData from "../data/servicesData";
+import Footer from "../components/Footer";
+import ContactUs from "../components/ContactUs/ContactUs"
 
 const ServiceDetail = () => {
   const navigate = useNavigate();
@@ -114,7 +116,10 @@ const ServiceDetail = () => {
           </div>
         </div>
       </div>
+      <Footer />
+      <ContactUs/>
     </>
+    
   );
 };
 
