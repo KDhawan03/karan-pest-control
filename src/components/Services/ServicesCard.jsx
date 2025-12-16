@@ -1,6 +1,8 @@
 // src/components/ServicesCard.jsx
 import "./ServicesCard.css";
-const ServicesCard = ({ image, title, description,icon }) => {
+import {Link} from "react-router-dom";
+
+const ServicesCard = ({ id, image, title, description, icon }) => {
     return (
         <div className="services-card bg-white rounded-3xl shadow-md overflow-hidden w-full">
 
@@ -14,8 +16,8 @@ const ServicesCard = ({ image, title, description,icon }) => {
 
             <div className="px-6 py-6 text-center">
                 <div className="flex items-center justify-center -mt-12 mb-4">
-                    <div className="w-16 h-16 rounded-full bg-[#299B46] flex items-center justify-center border-4 border-white circle">
-                        <span className="text-white text-2xl">{icon}</span>
+                    <div className="w-18 h-18 rounded-full bg-[#299B46] flex items-center justify-center border-4 border-white circle">
+                        <span className="text-white text-2xl"> <img src={icon} alt="" /> </span>
                     </div>
                 </div>
 
@@ -26,6 +28,11 @@ const ServicesCard = ({ image, title, description,icon }) => {
                 <p className=" whitespace-normal min-h-30 h-auto pt-5">
                     {description}
                 </p>
+                <Link to={`/services/${id}`}>                    
+                <button className="bg-[#299B46] hover:bg-[#1e1a3d] text-white font-semibold px-6 py-2 rounded-full transition duration-400 transform hover:scale-105 btn-wipe">
+                    See in Detail
+                </button>
+                </Link>
             </div>
         </div>
     );

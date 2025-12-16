@@ -3,6 +3,9 @@ import "./About.css";
 
 const AboutUs = () => {
     return (
+        <section id="about">
+            
+        
         <div className="w-full bg-white py-20 px-6 lg:px-20 grid lg:grid-cols-2 gap-16 items-center">
 
             {/* LEFT CONTENT */}
@@ -17,7 +20,7 @@ const AboutUs = () => {
                 </h1>
 
                 <p className="text-gray-600 text-lg leading-relaxed">
-                    We are a trusted pest control service focused on providing safe, reliable,
+                    Karan Pest Control is a trusted pest control service focused on providing safe, reliable,
                     and effective solutions for homes and businesses. With a certified team,
                     eco-friendly treatments, and dedicated customer support, we ensure a
                     pest-free environment for your comfort.
@@ -87,6 +90,7 @@ const AboutUs = () => {
             </div>
 
         </div>
+        </section>
     );
 };
 

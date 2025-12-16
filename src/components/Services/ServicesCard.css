@@ -22,9 +22,13 @@
 
 /* IMAGE hover blur effect */
 .card-img img {
-    transition: filter 0.3s ease;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    /* transform add kiya */
+    transform: scale(1);
+    /* initial scale */
 }
 
 .services-card:hover .card-img img {
-    filter: blur(1.5px);
+    transform: scale(1.2);
+    /* filter: blur(1.5px); */
 }
