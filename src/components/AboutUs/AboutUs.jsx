@@ -11,6 +11,7 @@ const AboutUs = () => {
 
             <div id="about" className="w-full bg-white py-20 px-6 lg:px-20 grid lg:grid-cols-2 gap-16 items-center">
 
+    
 
                 {/* LEFT CONTENT */}
                 <div className="space-y-6">
