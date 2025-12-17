@@ -126,7 +126,7 @@ const Navbar = () => {
       )}
     </nav>
     <FloatingWhatsApp
-      phoneNumber="+919968969900"
+      phoneNumber="+919650102720"
       accountName="Karan Pest Control Services"
       allowClickAway
       chatMessage="Hello, how can we help you?"
