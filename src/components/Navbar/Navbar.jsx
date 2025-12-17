@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-24">
           {/* Logo */}
           <a href="#home">
-            <div className="flex-shrink-0 -ml-24">
+            <div className="shrink-0">
               <img 
                 src="/images/logo.png" 
                 alt="Karan Pest Control Logo" 

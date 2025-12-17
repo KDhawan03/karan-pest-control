@@ -29,7 +29,6 @@ function HomePage() {
         <Hero/>
         <AboutUs/>
         <Services />
-        {/* <GetAQuote /> */}
         <ChooseUs />
         <Reviews />
         <GetAQuote />
