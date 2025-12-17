@@ -14,8 +14,11 @@ import AboutUs from './components/AboutUs/AboutUs.jsx';
 import { MouseProvider } from './components/CursorAnimation/MouseContext.jsx';
 import Cursor from './components/CursorAnimation/Cursor.jsx';
 
+import { Routes, Route } from "react-router-dom";
+import ServiceDetail from "./pages/ServiceDetail.jsx"; // naya file
 
-function App() {
+function HomePage() {
+
   return (
     <MouseProvider>
       <Cursor />
@@ -26,6 +29,7 @@ function App() {
         <Hero/>
         <AboutUs/>
         <Services />
+        {/* <GetAQuote /> */}
         <ChooseUs />
         <Reviews />
         <GetAQuote />
@@ -44,6 +48,19 @@ function App() {
     </MouseProvider>
 
   )
+}
+
+function App() {
+  return (
+    <MouseProvider>
+      <Cursor />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        {/* services detail page */}
+        <Route path="/services/:id" element={<ServiceDetail />} />
+      </Routes>
+    </MouseProvider>
+  );
 }
 
 export default App
