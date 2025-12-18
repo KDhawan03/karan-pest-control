@@ -67,8 +67,11 @@ export default function GetAQuote() {
 
     return (
 
-        <section id="quote" className="py-12 mt-20 sm:py-16">
-            <h2 className="text-center text-4xl font-extrabold text-gray-900 mb-20">
+        <section id="quote" className="py-12 mt-20 sm:py-16m bg-white">
+            <h2 className="text-center text-4xl font-extrabold text-gray-900 mb-20"
+                    onMouseEnter={() => cursorChangeHandler("text-mode")}
+                    onMouseLeave={() => cursorChangeHandler("default")}
+            >
                 Get a Free Quote for <br />
                 <span className="text-[#299B46]">
                     Professional Pest Control Services
