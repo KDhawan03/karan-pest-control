@@ -1,9 +1,10 @@
 import { Disclosure } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/24/solid'
+import { useMouse } from './CursorAnimation/MouseContext';
 
 
 export default function Faq() {
- 
+  const { cursorChangeHandler } = useMouse();
   const faq = [
     {
       q: "What is pest control?",
@@ -31,16 +32,19 @@ export default function Faq() {
     },
   ]
   return (
+
     <section id='faq' className="px-4 py-16 md:py-24">
+
+   
 
       {/* Header */}
 
       <h2 className="text-center text-3xl sm:text-4xl font-extrabold text-gray-900"
-
-
+          onMouseEnter={() => cursorChangeHandler("text-mode")}
+          onMouseLeave={() => cursorChangeHandler("default")}
       >
         Common Questions About Our <br />
-        <span className="text-emerald-600">Pest Control Services</span>
+        <span className="text-[#299B46]">Pest Control Services</span>
       </h2>
 
       <p className="mt-4 text-center max-w-2xl mx-auto text-sm text-gray-600">
