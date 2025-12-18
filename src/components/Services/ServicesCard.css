@@ -5,9 +5,9 @@
     z-index: 20;
 }
 
-.circle:hover {
+/* .circle:hover {
     background: radial-gradient(circle, #facc15 0%, #4f46e5 100%);
-}
+} */
 
 /* Smooth hover animations */
 .services-card {

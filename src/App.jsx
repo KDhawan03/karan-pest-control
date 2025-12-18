@@ -20,8 +20,7 @@ import ServiceDetail from "./pages/ServiceDetail.jsx"; // naya file
 function HomePage() {
 
   return (
-    <MouseProvider>
-      <Cursor />
+
       <>
         <Toaster position="top-center" />
         <Navbar/>
@@ -30,19 +29,14 @@ function HomePage() {
         <AboutUs/>
         <Services />
         <ChooseUs />
+        <GetAQuote />
         <Reviews />
         <Faq />
-        <Footer />
-        <ContactUs/>
-      
 
 
-
+      <Footer />
+      <ContactUs/>
     </>
-
-      
-    </MouseProvider>
-
   )
 }
 
