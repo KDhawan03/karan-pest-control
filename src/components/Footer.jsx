@@ -26,7 +26,7 @@ function Footer() {
                   Contact Us
                 </h2>
                 <p className="text-sm text-green-300 mt-1">
-                  +1 (123) 456-7890
+                  +91 7355169038
                 </p>
               </div>
             </div>
@@ -48,7 +48,7 @@ function Footer() {
                   Email Address
                 </h2>
                 <p className="text-sm text-green-300 mt-1">
-                  contact@karanpestcontrol.com
+                  pesticidekaran@gmail.com
                 </p>
               </div>
             </div>
@@ -72,8 +72,8 @@ function Footer() {
                 <h2 className="text-lg font-semibold text-white">
                   Location
                 </h2>
-                <p className="text-sm text-green-300 mt-1">
-                  123 Main Street, City, State
+                <p className="text-xs text-green-300 mt-1">
+                  183 Shankracharya Nagar, UP
                 </p>
               </div>
             </div>

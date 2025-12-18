@@ -29,12 +29,9 @@ function App() {
         <GetAQuote />
         <ChooseUs />
         <Reviews />
-        <GetAQuote />
         <Faq />
-
-
-      <Footer />
-      <ContactUs/>
+        <Footer />
+        <ContactUs/>
       
 
 
