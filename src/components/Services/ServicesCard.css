@@ -1,7 +1,7 @@
 .circle {
-    color: #000;
-    transition: background 0.5s ease;
-    position: relative;
+    /* color: #000; */
+    /* transition: background 0.5s ease; */
+    /* position: relative; */
     z-index: 20;
 }
 
