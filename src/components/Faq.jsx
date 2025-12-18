@@ -33,7 +33,7 @@ export default function Faq() {
   ]
   return (
 
-    <section id='faq' className="px-4 py-16 md:py-24">
+    <section id='faq' className="px-4 py-16 md:py-24 bg-white">
 
    
 
@@ -47,7 +47,7 @@ export default function Faq() {
         <span className="text-[#299B46]">Pest Control Services</span>
       </h2>
 
-      <p className="mt-4 text-center max-w-2xl mx-auto text-sm text-gray-600">
+      <p className="mt-4 text-center max-w-2xl mx-auto text-lg text-gray-600">
         Everything you need to know before booking — quick answers from our experts.
       </p>
 

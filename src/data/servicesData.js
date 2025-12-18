@@ -20,7 +20,7 @@ const servicesData = [
         },
         {
           heading: "Treatment Methods",
-          content: "• Gel Baiting  : Attracts & kills colony at source\n• Residual Spray : Long-lasting surface protection\n• Dust Powder : Penetrates wall voids"
+          content: "• <strong>Gel Baiting</strong>: Attracts & kills colony at source\n• <strong>Residual Spray</strong>: Long-lasting surface protection\n• <strong>Dust Powder</strong>: Penetrates wall voids"
         },
         {
           heading: "Safe for Family & Pets",
@@ -54,7 +54,7 @@ const servicesData = [
         },
         {
           heading: "Treatment Methods",
-          content: "• Web Removal : Vacuuming & manual clearing\n• Residual Sprays : Long-lasting protection on surfaces\n• Dust Application : Penetrates wall voids & cracks\n• Perimeter Treatment: Outdoor barrier prevents entry"
+          content: "• <strong>Web Removal</strong>: Vacuuming & manual clearing\n• <strong>Residual Sprays</strong>: Long-lasting protection on surfaces\n• <strong>Dust Application</strong>: Penetrates wall voids & cracks\n• <strong>Perimeter Treatment</strong>: Outdoor barrier prevents entry"
         },
         {
           "heading": "Safe Indoor Treatment",
@@ -88,7 +88,8 @@ const servicesData = [
         },
         {
           heading: "Advanced Treatment Methods",
-          content: "• **Steam Treatment**: 120°C kills eggs & adults instantly\n• **Residual Sprays**: Penetrates cracks/crevices\n• **Dust Powders**: Long-term residual protection\n• **Encasements**: Mattress covers prevent re-infestation"
+          content: "• <strong>Steam Treatment</strong>: 120°C kills eggs & adults instantly\n• <strong>Residual Sprays</strong>: Penetrates cracks/crevices\n• <strong>Dust Powders</strong>: Long-term residual protection\n• <strong>Encasements</strong>: Mattress covers prevent re-infestation"
+
         },
         {
           heading: "Complete Room Coverage",
@@ -121,7 +122,8 @@ const servicesData = [
         },
         {
           heading: "Treatment Methods",
-          content: "• **Soil Barrier**: Chemical treatment prevents termite entry\n• **Drilling Treatment**: Injects termiticide into foundations\n• **Bait Stations**: Colony elimination system\n• **Wood Treatment**: Protects wooden fixtures"
+          content: "• <strong>Soil Barrier</strong>: Chemical treatment prevents termite entry\n• <strong>Drilling Treatment</strong>: Injects termiticide into foundations\n• <strong>Bait Stations</strong>: Colony elimination system\n• <strong>Wood Treatment</strong>: Protects wooden fixtures"
+
         },
         {
           heading: "Pre vs Post Construction",
@@ -154,7 +156,8 @@ const servicesData = [
         },
         {
           heading: "Specific Treatments",
-          content: "• **Ant Gel Baits**: Workers carry poison to queen\n• **Fly Larvicide**: Drain/garbage treatment\n• **Space Spray**: Knocks down flying adults\n• **Perimeter Barrier**: Prevents re-entry"
+          content: "• <strong>Ant Gel Baits</strong>: Workers carry poison to queen\n• <strong>Fly Larvicide</strong>: Drain/garbage treatment\n• <strong>Space Spray</strong>: Knocks down flying adults\n• <strong>Perimeter Barrier</strong>: Prevents re-entry"
+
         },
         {
           heading: "Common Problem Areas",
@@ -187,7 +190,8 @@ const servicesData = [
         },
         {
           heading: "Treatment Methods",
-          content: "• **Bait Stations**: Non-spill, child/pet safe\n• **Snap Traps**: Instant kill\n• **Glue Boards**: High capture rate\n• **Exclusion**: Steel wool, metal flashing"
+          content: "• <strong>Bait Stations</strong>: Non-spill, child/pet safe\n• <strong>Snap Traps</strong>: Instant kill\n• <strong>Glue Boards</strong>: High capture rate\n• <strong>Exclusion</strong>: Steel wool, metal flashing"
+
         },
         {
           heading: "Sensitive Area Solutions",
@@ -220,7 +224,8 @@ const servicesData = [
         },
         {
           heading: "Fogger Types",
-          content: "• **Thermal**: Insecticide vapor penetrates vegetation\n• **Cold Fog**: Clean mist for indoor/outdoor\n• **ULV Misting**: Fine droplets reach corners"
+          content: "• <strong>Thermal</strong>: Insecticide vapor penetrates vegetation\n• <strong>Cold Fog</strong>: Clean mist for indoor/outdoor\n• <strong>ULV Misting</strong>: Fine droplets reach corners"
+
         },
         {
           heading: "Integrated Approach",
@@ -253,7 +258,7 @@ const servicesData = [
         },
         {
           heading: "Disinfectant Types",
-          content: "• **Quaternary Ammonium**: Broad spectrum\n• **Hydrogen Peroxide**: Virus killer\n• **Sodium Hypochlorite**: Surface sterilizer\n• **Alcohol 70%**: Instant disinfection"
+          content: "• <strong>Quaternary Ammonium</strong>: Broad spectrum\n• <strong>Hydrogen Peroxide</strong>: Virus killer\n• <strong>Sodium Hypochlorite</strong>: Surface sterilizer\n• <strong>Alcohol 70%</strong>: Instant disinfection"
         },
         {
           heading: "Complete Coverage",

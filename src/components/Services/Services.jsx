@@ -48,7 +48,7 @@ const Services = () => {
                                 title="Spider Control"
                                 description="Expert spider removal ensuring a safe and pest-free home environment."
                                 image="/images/serviceImg2.png"
-                                icon="/images/termite.png"
+                                icon="/images/spider.png"
                             />
                         </div>
 
@@ -68,7 +68,7 @@ const Services = () => {
                                 title="Termite Protection"
                                 description="Protect your property from structural damage with our advanced termite treatments."
                                 image="/images/serviceImg4.png"
-                                icon="/images/ant.jpg"
+                                icon="/images/termite.png"
                             />
 
                         </div>

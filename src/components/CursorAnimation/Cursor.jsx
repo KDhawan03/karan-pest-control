@@ -9,7 +9,8 @@ const Cursor = () => {
   const mousePosition = useRef({ x: 0, y: 0 }); // mouse position
   const cursorPosition = useRef({ x: 0, y: 0 }); // dot position
 
-  const mouseMove = (e) => {
+  useEffect(() => {
+    const mouseMove = (e) => {
       mousePosition.current = { x: e.clientX, y: e.clientY };
     };
 
@@ -34,7 +35,13 @@ const Cursor = () => {
     };
 
     animate();
-
+    return () => {
+      window.removeEventListener("mousemove", mouseMove);
+      if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId);
+      }
+    };
+  }, []);
   return (
     <div 
       className={`cursor ${cursorVariant}`} 

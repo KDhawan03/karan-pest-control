@@ -16,7 +16,7 @@ const ServicesCard = ({ id, image, title, description, icon }) => {
 
             <div className="px-6 py-6 text-center">
                 <div className="flex items-center justify-center -mt-12 mb-4">
-                    <div className="w-18 h-18 rounded-full bg-[#299B46] flex items-center justify-center border-4 border-white circle">
+                    <div className="w-18 h-18 rounded-full bg-[#fff] flex items-center justify-center border-4 border-white circle">
                         <span className="text-white text-2xl"> <img src={icon} alt="" /> </span>
                     </div>
                 </div>
