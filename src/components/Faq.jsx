@@ -32,7 +32,10 @@ export default function Faq() {
     },
   ]
   return (
-    <section className="px-4 py-16 md:py-24 bg-white">
+
+    <section id='faq' className="px-4 py-16 md:py-24">
+
+   
 
       {/* Header */}
 

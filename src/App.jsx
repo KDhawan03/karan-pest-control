@@ -31,12 +31,9 @@ function HomePage() {
         <Services />
         <ChooseUs />
         <Reviews />
-        <GetAQuote />
         <Faq />
-
-
-      <Footer />
-      <ContactUs/>
+        <Footer />
+        <ContactUs/>
       
 
 

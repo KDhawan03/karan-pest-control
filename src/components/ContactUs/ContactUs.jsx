@@ -48,16 +48,16 @@ const Footer = () => {
 
           {/* About Us */}
           <div>
-            <h3 className="font-semibold mb-4">About Us</h3>
-            <ul className="space-y-2 text-sm">
-              <li>Review</li>
-              <li>Our Services</li>
-              <li>FAQ</li>
-              <li>Contact Us</li>
+            <h3 className="font-bold mb-4">About Us</h3>
+            <ul className="space-y-2 text-2sm">
+              <a href="#reviews" className=" hover:text-[#1e1a3d] "> <li className="space-y-2 text-sm">Review</li> </a>
+              <a href="#services" className="hover:text-[#1e1a3d] ">  <li className="space-y-2 text-sm">Our Services</li> </a>
+              <a href="#faq" className="hover:text-[#1e1a3d]"> <li className="space-y-2 text-sm">FAQ</li></a>
+              <a href="#contact" className="hover:text-[#1e1a3d]"> <li className="space-y-2 text-sm">Contact</li> </a>
             </ul>
           </div>
 
-          {/* Map (WIDTH IMPROVED HERE ✅) */}
+          {/* Map  */}
           <div className="flex justify-start lg:justify-end">
             <div
               className="w-full max-w-sm md:max-w-md lg:max-w-lg 
@@ -65,7 +65,7 @@ const Footer = () => {
             >
               <iframe
                 title="Karan Pest Control Location"
-                src="https://www.google.com/maps?q=Shankracharya%20Nagar%20Kanpur&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3573.318420979216!2d80.33446727487785!3d26.413199081379457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c46e5ccd028eb%3A0x3213613b72dcb3bb!2s183%2C%20Y-1%2C%20Shankaracharya%20Nagar%2C%20Deoki%20Nagar%2C%20Yashoda%20Nagar%2C%20Kanpur%2C%20Uttar%20Pradesh%20208011!5e0!3m2!1sen!2sin!4v1766039390520!5m2!1sen!2sin" 
                 className="w-full h-44 md:h-48 lg:h-52"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -94,7 +94,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-10 border-t border-white/20 pt-6 text-center text-sm">
           <p>© 2025 Karan Pest Control. All rights reserved.</p>
-          <div className="mt-2 flex justify-center gap-4 text-xs">
+          {/* <div className="mt-2 flex justify-center gap-4 text-xs">
             <span>Careers</span>
             <span>|</span>
             <span>Terms</span>
@@ -102,7 +102,8 @@ const Footer = () => {
             <span>Privacy</span>
             <span>|</span>
             <span>Sitemap</span>
-          </div>
+          </div> */}
+          <div>Made with ❤️ by <a  className="hover:text-[#06ff44]" href="https://www.shikom.com/" target="_blank" rel="noopener noreferrer">Shikom Solution</a></div>
         </div>
       </div>
     </footer>
