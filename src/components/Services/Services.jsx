@@ -48,7 +48,7 @@ const Services = () => {
                                 title="Spider Control"
                                 description="Expert spider removal ensuring a safe and pest-free home environment."
                                 image="/images/serviceImg2.jpg"
-                                icon="/images/spider2.png"
+                                icon="/images/spider.png"
                             />
                         </div>
 
