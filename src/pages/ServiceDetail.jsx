@@ -32,7 +32,7 @@ const ServiceDetail = ({icon}) => {
       <Navbar />
       <div className="max-w-6xl mx-auto p-10 space-y-12 mt-16">
         {/* Hero Section */}
-        <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 px-4 mt-8">
+        <div className="flex flex-col md:flex-row items-center justify-start gap-6 md:gap-8 px-4 mt-8">
           <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold text-[#1e1a3d] text-center md:text-left">
             {service.title}
           </h1>
