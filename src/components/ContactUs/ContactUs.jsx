@@ -102,16 +102,9 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-10 border-t border-white/20 pt-6 text-center text-sm">
           <p>© 2025 Karan Pest Control. All rights reserved.</p>
-          {/* <div className="mt-2 flex justify-center gap-4 text-xs">
-            <span>Careers</span>
-            <span>|</span>
-            <span>Terms</span>
-            <span>|</span>
-            <span>Privacy</span>
-            <span>|</span>
-            <span>Sitemap</span>
-          </div> */}
-          <div>Made with ❤️ by <a className="hover:text-[#06ff44]" href="https://www.shikom.com/" target="_blank" rel="noopener noreferrer">Shikom Solutions</a></div>
+
+          <div>Made with ❤️ by <a  className="hover:text-[#06ff44]" href="https://www.shikom.com/" target="_blank" rel="noopener noreferrer">Shikom Solutions</a></div>
+
         </div>
       </div>
     </footer>

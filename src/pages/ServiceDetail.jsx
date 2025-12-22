@@ -1,10 +1,11 @@
 import Navbar from "../components/Navbar/Navbar";
+import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import servicesData from "../data/servicesData";
 import Footer from "../components/Footer";
 import ContactUs from "../components/ContactUs/ContactUs"
 
-const ServiceDetail = () => {
+const ServiceDetail = ({icon}) => {
   const navigate = useNavigate();
 
   const goToQuote = () => {
@@ -18,6 +19,10 @@ const ServiceDetail = () => {
   const { id } = useParams();
   const service = servicesData.find(s => s.id === id);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
+
   if (!service) {
     return <h2 className="p-10 text-center text-2xl font-bold text-red-600">Service not found</h2>;
   }
@@ -25,15 +30,15 @@ const ServiceDetail = () => {
   return (
     <>
       <Navbar />
-      <div className="max-w-6xl mx-auto p-10 space-y-12">
+      <div className="max-w-6xl mx-auto p-10 space-y-12 mt-16">
         {/* Hero Section */}
-        <div className="text-center">
-          {/* <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6">
-            {service.title}
-          </h1> */}
-          <h1 className="text-5xl font-bold text-[#1e1a3d] mt-24 mb-4">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 px-4 mt-8">
+          <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold text-[#1e1a3d] text-center md:text-left">
             {service.title}
           </h1>
+          <div className = "w-20 h-20 md:w-24 md:h-24 lg:w-40 lg:h-40 flex-shrink-0 flex items-center justify-center">
+            <img src={service.icon} alt={service.title} className="w-full h-full object-contain" />
+          </div>
         </div>
 
         {/* Main Content Grid */}
