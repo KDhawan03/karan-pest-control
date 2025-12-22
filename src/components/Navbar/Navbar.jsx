@@ -13,7 +13,7 @@ const Navbar = () => {
     <>
     <nav className="bg-white shadow-md fixed w-full top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-24 -ml-24">
+        <div className="flex justify-between items-center h-24 lg:-ml-24">
           {/* Logo */}
           <a href="#home">
             <div className="shrink-0">
@@ -50,7 +50,7 @@ const Navbar = () => {
           {/* Get a quote */}
           <div className="hidden md:block">
             <a href="#quote">
-              <button className="bg-[#299B46] hover:bg-[#1e1a3d] text-white font-semibold px-6 py-2 rounded-full transition duration-400 transform hover:scale-105 btn-wipe -mr-24">
+              <button className="bg-[#299B46] hover:bg-[#1e1a3d] text-white font-semibold px-6 py-2 rounded-full transition duration-400 transform hover:scale-105 btn-wipe lg:-mr-24">
                 Get a Quote
               </button>
             </a>
