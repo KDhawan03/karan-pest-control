@@ -1,4 +1,5 @@
-import React from "react";
+
+
 import {
   FacebookOutlined,
   InstagramOutlined,
@@ -26,8 +27,15 @@ const Footer = () => {
             </p>
 
             <p className="text-sm">
-              <span className="font-semibold">Phone:</span> +91 7355169038
+              <span className="font-semibold">Phone:</span>
+              <a
+                href="tel:+917355169038"
+                className="hover:underline"
+              >
+                +91 7355169038
+              </a>
             </p>
+
             <p className="text-sm mt-1">
               183 Y-1, Shankracharya Nagar <br />
               Kanpur, Uttar Pradesh
@@ -65,7 +73,7 @@ const Footer = () => {
             >
               <iframe
                 title="Karan Pest Control Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3573.318420979216!2d80.33446727487785!3d26.413199081379457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c46e5ccd028eb%3A0x3213613b72dcb3bb!2s183%2C%20Y-1%2C%20Shankaracharya%20Nagar%2C%20Deoki%20Nagar%2C%20Yashoda%20Nagar%2C%20Kanpur%2C%20Uttar%20Pradesh%20208011!5e0!3m2!1sen!2sin!4v1766039390520!5m2!1sen!2sin" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3573.318420979216!2d80.33446727487785!3d26.413199081379457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c46e5ccd028eb%3A0x3213613b72dcb3bb!2s183%2C%20Y-1%2C%20Shankaracharya%20Nagar%2C%20Deoki%20Nagar%2C%20Yashoda%20Nagar%2C%20Kanpur%2C%20Uttar%20Pradesh%20208011!5e0!3m2!1sen!2sin!4v1766039390520!5m2!1sen!2sin"
                 className="w-full h-44 md:h-48 lg:h-52"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -103,7 +111,7 @@ const Footer = () => {
             <span>|</span>
             <span>Sitemap</span>
           </div> */}
-          <div>Made with ❤️ by <a  className="hover:text-[#06ff44]" href="https://www.shikom.com/" target="_blank" rel="noopener noreferrer">Shikom Solution</a></div>
+          <div>Made with ❤️ by <a className="hover:text-[#06ff44]" href="https://www.shikom.com/" target="_blank" rel="noopener noreferrer">Shikom Solutions</a></div>
         </div>
       </div>
     </footer>

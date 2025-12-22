@@ -4,6 +4,8 @@ import img from '/images/get_a_quet.png';
 import { useMouse } from './CursorAnimation/MouseContext';
 import emailjs from '@emailjs/browser'
 
+
+
 export default function GetAQuote() {
     const { cursorChangeHandler } = useMouse();
     const [formData, setFormData] = useState({ name: "", phone: "", email: "", service: "", message: "" });
@@ -35,11 +37,11 @@ export default function GetAQuote() {
             toast.error(Object.values(e)[0]);
             return;
         }
-        
+
         const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
         const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
         const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-        
+
 
         const templateParams = {
             name: formData.name,
@@ -70,8 +72,8 @@ export default function GetAQuote() {
 
         <section id="quote" className="py-12 mt-20 sm:py-16m bg-white">
             <h2 className="text-center text-4xl font-extrabold text-gray-900 mb-20"
-                    onMouseEnter={() => cursorChangeHandler("text-mode")}
-                    onMouseLeave={() => cursorChangeHandler("default")}
+                onMouseEnter={() => cursorChangeHandler("text-mode")}
+                onMouseLeave={() => cursorChangeHandler("default")}
             >
                 Get a Free Quote for <br />
                 <span className="text-[#299B46]">
@@ -84,7 +86,7 @@ export default function GetAQuote() {
 
                     {/* Left: form */}
                     <div className="p-10 lg:p-14">
-                        <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight" 
+                        <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight"
                             onMouseEnter={() => cursorChangeHandler("text-mode")}
                             onMouseLeave={() => cursorChangeHandler("default")}
                         >
