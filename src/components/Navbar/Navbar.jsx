@@ -50,7 +50,7 @@ const Navbar = () => {
           {/* Get a quote */}
           <div className="hidden md:block">
             <a href="#quote">
-              <button className="bg-[#299B46] hover:bg-[#1e1a3d] text-white font-semibold px-6 py-2 rounded-full transition duration-400 transform hover:scale-105 btn-wipe -mr-24">
+              <button className="bg-[#299B46] hover:bg-[#1e1a3d] text-white font-semibold px-6 py-2 rounded-full transition duration-400 transform hover:scale-105 btn-wipe lg:-mr-24">
                 Get a Quote
               </button>
             </a>
