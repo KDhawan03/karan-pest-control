@@ -103,7 +103,7 @@ const Footer = () => {
             <span>|</span>
             <span>Sitemap</span>
           </div> */}
-          <div>Made with ❤️ by <a  className="hover:text-[#06ff44]" href="https://www.shikom.com/" target="_blank" rel="noopener noreferrer">Shikom Solution</a></div>
+          <div>Made with ❤️ by <a  className="hover:text-[#06ff44]" href="https://www.shikom.com/" target="_blank" rel="noopener noreferrer">Shikom Solutions</a></div>
         </div>
       </div>
     </footer>
