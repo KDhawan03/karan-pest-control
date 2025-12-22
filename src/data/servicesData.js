@@ -5,7 +5,8 @@ const servicesData = [
   {
     id: "cockroach-control",
     title: "Cockroach Control",
-    image: "/images/serviceImg1.png",
+    // image: "/images/serviceImg1.png",
+    icon: "/images/cockroach.png",
     details: {
       intro: "Cockroaches spread 30+ bacteria including E.coli, Salmonella & trigger asthma attacks. Professional treatment is essential.",
 
@@ -39,7 +40,8 @@ const servicesData = [
   {
     id: "spider-control",
     title: "Spider Control",
-    image: "/images/serviceImg2.png",
+    // image: "/images/serviceImg2.png",
+    icon: "/images/spider2.png",
     details: {
       intro: "Spiders indicate other pest problems. Most are harmless but webs create unhygienic conditions & some species bite.",
 
@@ -73,7 +75,8 @@ const servicesData = [
   {
     id: "3",
     title: "Bed Bug Treatment",
-    image: "/images/serviceImg3.png",
+    // image: "/images/serviceImg3.png",
+    icon: "/images/bedbug.png",
     details: {
       intro: "Bed bugs multiply rapidly & hide in tiny cracks. Early detection prevents full infestation costing thousands in treatment.",
 
@@ -107,7 +110,8 @@ const servicesData = [
   {
     id: "4",
     title: "Termite Protection",
-    image: "/images/serviceImg4.png",
+    // image: "/images/serviceImg4.png",
+    icon: "/images/termite.png",
     details: {
       intro: "Termites cause ₹5000+ crore structural damage yearly in India. Early protection saves lakhs in repairs.",
 
@@ -141,7 +145,8 @@ const servicesData = [
   {
     id: "5",
     title: "Ant & Fly Control",
-    image: "/images/serviceImg5.png",
+    // image: "/images/serviceImg5.png",
+    icon: "/images/ant.jpg",
     details: {
       intro: "Ants & flies contaminate food & spread 100+ diseases including typhoid & dysentery.",
 
@@ -175,7 +180,8 @@ const servicesData = [
   {
     id: "6",
     title: "Rat & Rodent Management",
-    image: "/images/serviceImg6.png",
+    // image: "/images/serviceImg6.png",
+    icon: "/images/rat.png",
     details: {
       intro: "Rats damage ₹1000+ crore worth property annually & spread leptospirosis, plague.",
 
@@ -209,7 +215,8 @@ const servicesData = [
   {
     id: "7",
     title: "Mosquito Fogging",
-    image: "/images/serviceImg7.png",
+    // image: "/images/serviceImg7.png",
+    icon: "/images/mosquito.png",
     details: {
       intro: "Mosquitoes transmit Dengue, Malaria, Chikungunya. Fogging provides immediate relief.",
 
@@ -243,7 +250,8 @@ const servicesData = [
   {
     id: "8",
     title: "Home Disinfection",
-    image: "/images/serviceImg8.png",
+    // image: "/images/serviceImg8.png",
+    icon: "/images/disinfection.png",
     details: {
       intro: "Eliminates 99.9% germs, viruses, bacteria from surfaces creating hospital-grade hygiene.",
 
