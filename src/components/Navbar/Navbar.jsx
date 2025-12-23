@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import './Navbar.css'
 import { FloatingWhatsApp } from "react-floating-whatsapp";
-import { useNavigate } from 'react-router-dom';
 import { HiBars3, HiXMark } from "react-icons/hi2";
+
+import { useNavigate } from 'react-router-dom';
 
 
 const Navbar = () => {
