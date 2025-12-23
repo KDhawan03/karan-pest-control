@@ -5,14 +5,14 @@ import {
 } from "@ant-design/icons";
 
 const servicesData = [
-  { id: 5, name: "Ant Control" },
   { id: "spider-control", name: "Spider Control" },
-  { id: 4, name: "Termite Protection" },
-  { id: 3, name: "Bed Bug Treatment" },
   { id: "cockroach-control", name: "Cockroach Control" },
-  { id: 8, name: "Home Disinfection" },
+  { id: 3, name: "Bed Bug Treatment" },
+  { id: 4, name: "Termite Protection" },
+  { id: 5, name: "Ant Control" },
   { id: 6, name: "Rat & Rodent Management" },
   { id: 7, name: "Mosquito Fogging" },
+  { id: 8, name: "Home Disinfection" },
 ];
 
 const Footer = () => {
