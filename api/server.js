@@ -4,7 +4,6 @@ import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
 dotenv.config();
 
-dotenv.config();
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -17,6 +16,7 @@ const transporter = nodemailer.createTransport({
     }
 });
 
+
 app.post('/send-email', async (req, res) => {
   try {
     const { name = 'N/A', phone = 'N/A', email = 'N/A', service = 'N/A', message = '' } = req.body;
@@ -28,7 +28,7 @@ app.post('/send-email', async (req, res) => {
       to: process.env.EMAIL_USER,
       subject: `🪳 Quote: ${name} - ${service}`,
       html: `
-        <h3>New Quiry by ${name} - service(${service}) </h3>
+        <h3>New Query by ${name} - service(${service}) </h3>
         <h4>Customer Details:</h4>
         <p><strong>👤 Name:</strong> ${name}</p>
         <p><strong>📱 Phone:</strong> <span style="color: green; font-size: 15px;">${phone}</span></p>
@@ -42,12 +42,17 @@ app.post('/send-email', async (req, res) => {
       text: `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nService: ${service}\nMessage: ${message}`  // Backup plain text
     });
     
-    console.log('✅ Email SENT with full details!');
-    res.json({ success: true });
+    console.log('Email SENT with full details!');
+    return res.status(200).json({ success: true });
   } catch (error) {
-    console.error('❌ Email Error:', error.message);
-    res.status(500).json({ error: 'Failed to send email' });
+    console.error('Email Error:', error.message);
+    return res.status(500).json({ error: 'Failed to send email' });
   }
 });
 
-app.listen(5000, () => console.log('✅ Email server: http://localhost:5000'));
+export default app;
+
+if (!process.env.VERCEL) {
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT);
+}
