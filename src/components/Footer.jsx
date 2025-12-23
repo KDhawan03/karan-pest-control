@@ -26,7 +26,12 @@ function Footer() {
                   Contact Us
                 </h2>
                 <p className="text-sm text-green-300 mt-1">
-                  +91 7355169038
+                  <a
+                    href="tel:+917355169038"
+                    className="hover:text-[#1e1a3d]"
+                  >
+                    +91 7355169038
+                  </a>
                 </p>
               </div>
             </div>
@@ -48,8 +53,16 @@ function Footer() {
                   Email Address
                 </h2>
                 <p className="text-sm text-green-300 mt-1">
-                  pesticidekaran@gmail.com
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=pesticidekaran@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-[#1e1a3d] cursor-pointer"
+                  >
+                    pesticidekaran@gmail.com
+                  </a>
                 </p>
+
               </div>
             </div>
 
@@ -73,8 +86,16 @@ function Footer() {
                   Location
                 </h2>
                 <p className="text-xs text-green-300 mt-1">
-                  183 Shankracharya Nagar, UP
+                  <a
+                    href="https://www.google.com/maps?q=183+Shankracharya+Nagar+Uttar+Pradesh"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:hover:text-[#1e1a3d] cursor-pointer"
+                  >
+                    183 Shankracharya Nagar, UP
+                  </a>
                 </p>
+
               </div>
             </div>
 
