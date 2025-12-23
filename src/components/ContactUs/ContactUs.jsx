@@ -73,7 +73,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Pest Control  */}
+          {/* Pest Control ->  */}
           <div className="pt-1 md:-ml-4 lg:-ml-8">
             <h3 className="font-semibold mb-5 text-center">
               Pest Control
