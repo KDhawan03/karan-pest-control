@@ -1,11 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
-import {  StarFilled  } from '@ant-design/icons';
+import { StarFilled } from '@ant-design/icons';
 import "swiper/css";
 import "swiper/css/pagination";
 import { useMouse } from './CursorAnimation/MouseContext';
 
-export default function Testimonials() { 
+export default function Testimonials() {
     const { cursorChangeHandler } = useMouse();
     const reviews = [
         {
@@ -52,13 +52,25 @@ export default function Testimonials() {
         },
     ];
 
+    const limitWords = (text, limit = 20) => {
+        const words = text.trim().split(/\s+/); 
+
+        if (words.length <= limit) {
+            return text;
+        }
+
+        return words.slice(0, limit).join(" ") + "...";
+    };
+
+
+
 
 
     return (
 
-        
 
-        <section id = "reviews" className="bg-white py-20">
+
+        <section id="reviews" className="bg-white py-20">
 
             <div className="max-w-7xl mx-auto px-6">
 
@@ -85,13 +97,13 @@ export default function Testimonials() {
                         loop={true}
                         centeredSlides={true}
                         spaceBetween={40}
-                        
+
                         breakpoints={{
                             768: { slidesPerView: 2 },
                             1024: { slidesPerView: 3 },
                         }}
                     >
-                        {   reviews.map((item, index) => (
+                        {reviews.map((item, index) => (
                             <SwiperSlide key={index}>
                                 {({ isActive }) => (
                                     <div
@@ -101,7 +113,7 @@ export default function Testimonials() {
                                         ${isActive
                                                 ? "scale-105 shadow-xl"
                                                 : "opacity-70"
-                                        }`}
+                                            }`}
                                     >
                                         {/* Profile */}
                                         <div>
@@ -130,7 +142,7 @@ export default function Testimonials() {
 
                                             {/* Review Text */}
                                             <p className="text-gray-600 leading-relaxed">
-                                                “{item.text}”
+                                                “{limitWords(item.text, 24)}”
                                             </p>
                                         </div>
                                     </div>
