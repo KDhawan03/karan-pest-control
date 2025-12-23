@@ -93,7 +93,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* About Us */}
+          {/* About - Us */}
           <div className="pt-1">
             <h3 className="font-semibold mb-5 lg:text-center">
               About Us
