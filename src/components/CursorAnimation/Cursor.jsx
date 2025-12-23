@@ -19,7 +19,7 @@ const Cursor = () => {
     let animationFrameId;
     
     const animate = () => {
-      const speed = 0.05; 
+      const speed = 0.25; 
 
       const mouse = mousePosition.current;
       const cursor = cursorPosition.current;
