@@ -39,9 +39,10 @@ export default function GetAQuote() {
 
   
   setSubmitted(true);
+  const API_BASE = import.meta.env.VITE_API_URL || '';
 
   try {
-    const response = await fetch('/send-email', {
+    const response = await fetch(`${API_BASE}/send-email`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({

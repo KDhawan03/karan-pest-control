@@ -50,4 +50,9 @@ app.post('/send-email', async (req, res) => {
   }
 });
 
-app.listen(5000, () => console.log('✅ Email server: http://localhost:5000'));
+export default app;
+
+if (!process.env.VERCEL) {
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT);
+}
