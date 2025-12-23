@@ -7,12 +7,12 @@ import {
 const servicesData = [
   { id: "spider-control", name: "Spider Control" },
   { id: "cockroach-control", name: "Cockroach Control" },
-  { id: 3, name: "Bed Bug Treatment" },
   { id: 4, name: "Termite Protection" },
   { id: 5, name: "Ant Control" },
-  { id: 6, name: "Rat & Rodent Management" },
   { id: 7, name: "Mosquito Fogging" },
   { id: 8, name: "Home Disinfection" },
+  { id: 3, name: "Bed Bug Control" },
+  { id: 6, name: "Rat & Rodent Management" },
 ];
 
 const Footer = () => {
@@ -23,8 +23,8 @@ const Footer = () => {
     >
       <div className="max-w-7xl mx-auto px-6 py-14">
 
-        {/* Top Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        {/* Top - Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
 
           {/* Logo & Address */}
           <div className="lg:col-span-2">
@@ -73,13 +73,13 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Pest Control – RESPONSIVE LEFT */}
+          {/* Pest Control ->  */}
           <div className="pt-1 md:-ml-4 lg:-ml-8">
-            <h3 className="font-semibold mb-5 text-left">
+            <h3 className="font-semibold mb-5 text-center">
               Pest Control
             </h3>
 
-            <ul className="grid grid-cols-2 gap-x-6 gap-y-2 text-sm">
+            <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
               {servicesData.map((service) => (
                 <li key={service.id}>
                   <Link
@@ -93,9 +93,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* About Us */}
+          {/* About - Us */}
           <div className="pt-1">
-            <h3 className="font-semibold mb-5 text-center">
+            <h3 className="font-semibold mb-5 lg:text-center">
               About Us
             </h3>
 
@@ -123,7 +123,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Map */}
+          {/* Map  */}
           <div className="flex justify-start lg:justify-end">
             <div className="w-full max-w-sm md:max-w-md lg:max-w-lg rounded-xl overflow-hidden border border-white/20 shadow-lg">
               <iframe
