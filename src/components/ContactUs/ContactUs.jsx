@@ -1,8 +1,7 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   FacebookOutlined,
   InstagramOutlined,
-  TwitterOutlined,
 } from "@ant-design/icons";
 
 const servicesData = [
@@ -12,6 +11,8 @@ const servicesData = [
   { id: 3, name: "Bed Bug Treatment" },
   { id: "cockroach-control", name: "Cockroach Control" },
   { id: 8, name: "Home Disinfection" },
+  { id: 6, name: "Rat & Rodent Management" },
+  { id: 7, name: "Mosquito Fogging" },
 ];
 
 const Footer = () => {
@@ -72,10 +73,13 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Pest Control */}
-          <div>
-            <h3 className="font-semibold mb-4">Pest Control</h3>
-            <ul className="space-y-2 text-sm">
+          {/* Pest Control – RESPONSIVE LEFT */}
+          <div className="pt-1 md:-ml-4 lg:-ml-8">
+            <h3 className="font-semibold mb-5 text-left">
+              Pest Control
+            </h3>
+
+            <ul className="grid grid-cols-2 gap-x-6 gap-y-2 text-sm">
               {servicesData.map((service) => (
                 <li key={service.id}>
                   <Link
@@ -90,9 +94,12 @@ const Footer = () => {
           </div>
 
           {/* About Us */}
-          <div>
-            <h3 className="font-semibold mb-4">About Us</h3>
-            <ul className="space-y-2 text-sm">
+          <div className="pt-1">
+            <h3 className="font-semibold mb-5 text-center">
+              About Us
+            </h3>
+
+            <ul className="space-y-2 text-sm ml-15">
               <li>
                 <a href="#reviews" className="hover:text-[#1e1a3d]">
                   Reviews
@@ -109,8 +116,8 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-[#1e1a3d]">
-                  Contact
+                <a href="#about" className="hover:text-[#1e1a3d]">
+                  About Us
                 </a>
               </li>
             </ul>
@@ -122,7 +129,7 @@ const Footer = () => {
               <iframe
                 title="Karan Pest Control Location"
                 src="https://www.google.com/maps?q=Shankracharya+Nagar+Kanpur&output=embed"
-                className="w-full h-44 md:h-48 lg:h-52"
+                className="w-full h-44 md:h-48 lg:h-54"
                 loading="lazy"
               ></iframe>
             </div>
@@ -140,7 +147,6 @@ const Footer = () => {
             <a className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30">
               <InstagramOutlined />
             </a>
-            
           </div>
         </div>
 
