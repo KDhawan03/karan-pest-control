@@ -2,13 +2,13 @@ import { useState } from 'react';
 import './Navbar.css'
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import { useNavigate } from 'react-router-dom';
-import { HiMenu, HiX } from 'react-icons/hi';
+import { HiBars3, HiXMark } from "react-icons/hi2";
 
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate(); // ← YE ADD KIA
-  
+
   const goToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -45,16 +45,16 @@ const Navbar = () => {
               <a href="#home" onClick={(e) => { e.preventDefault(); goToSection("home"); }} className="text-[#1e1a3d] hover:text-[#299B46] transition duration-300">
                 Home
               </a>
-              <a href="#about" onClick={(e) => { e.preventDefault(); goToSection("about"); }}  className="text-[#1e1a3d] hover:text-[#299B46] transition duration-300">
+              <a href="#about" onClick={(e) => { e.preventDefault(); goToSection("about"); }} className="text-[#1e1a3d] hover:text-[#299B46] transition duration-300">
                 About Us
               </a>
-              <a href="#services" onClick={(e) => { e.preventDefault(); goToSection("services"); }}  className="text-[#1e1a3d] hover:text-[#299B46] transition duration-300">
+              <a href="#services" onClick={(e) => { e.preventDefault(); goToSection("services"); }} className="text-[#1e1a3d] hover:text-[#299B46] transition duration-300">
                 Our Services
               </a>
-              <a href="#reviews" onClick={(e) => { e.preventDefault(); goToSection("reviews"); }}  className="text-[#1e1a3d] hover:text-[#299B46] transition duration-300">
+              <a href="#reviews" onClick={(e) => { e.preventDefault(); goToSection("reviews"); }} className="text-[#1e1a3d] hover:text-[#299B46] transition duration-300">
                 Reviews
               </a>
-              <a href="#contact" onClick={(e) => { e.preventDefault(); goToSection("contact"); }}  className="text-[#1e1a3d] hover:text-[#299B46] transition duration-300">
+              <a href="#contact" onClick={(e) => { e.preventDefault(); goToSection("contact"); }} className="text-[#1e1a3d] hover:text-[#299B46] transition duration-300">
                 Contact Us
               </a>
             </div>
@@ -75,11 +75,12 @@ const Navbar = () => {
                 className="text-[#299B46] hover:text-[#1e1a3d] focus:outline-none"
               >
                 {isMenuOpen ? (
-                  <HiX className="h-6 w-6" />
+                  <HiXMark className="h-6 w-6" />
                 ) : (
-                  <HiMenu className="h-6 w-6" />
+                  <HiBars3 className="h-6 w-6" />
                 )}
               </button>
+
             </div>
           </div>
         </div>
