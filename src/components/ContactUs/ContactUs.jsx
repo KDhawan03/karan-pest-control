@@ -123,7 +123,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Map */}
+          {/* Map  */}
           <div className="flex justify-start lg:justify-end">
             <div className="w-full max-w-sm md:max-w-md lg:max-w-lg rounded-xl overflow-hidden border border-white/20 shadow-lg">
               <iframe
