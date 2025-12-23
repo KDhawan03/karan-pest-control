@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { toast } from 'react-hot-toast';
 import img from '/images/get_a_quet.png';
 import { useMouse } from './CursorAnimation/MouseContext';
-// import emailjs from '@emailjs/browser'
 
 export default function GetAQuote() {
     const { cursorChangeHandler } = useMouse();
@@ -39,10 +38,10 @@ export default function GetAQuote() {
 
   
   setSubmitted(true);
-  const API_BASE = import.meta.env.VITE_API_URL || '';
+//   const API_BASE = import.meta.env.VITE_API_URL || '';
 
   try {
-    const response = await fetch(`${API_BASE}/send-email`, {
+    const response = await fetch('/api/server', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -68,46 +67,6 @@ export default function GetAQuote() {
   
   setSubmitted(false);
 };
-
-
-    // const handleSubmit = (ev) => {
-    //     ev.preventDefault();
-    //     const e = validate();
-    //     if (Object.keys(e).length) {
-    //         setErrors(e);
-    //         toast.error(Object.values(e)[0]);
-    //         return;
-    //     }
-        
-    //     const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-    //     const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-    //     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-        
-
-    //     const templateParams = {
-    //         name: formData.name,
-    //         email: formData.email,
-    //         phone: formData.phone,
-    //         service: formData.service,
-    //         message: formData.message,
-    //         time: new Date().toLocaleString()
-    //     }
-    //     setSubmitted(true);
-
-    //     emailjs.send(serviceId, templateId, templateParams, publicKey)
-    //         .then((response) => {
-    //             // console.log('SUCCESS!', response.status, response.text);
-    //             toast.success('Request sent! We will contact you soon.');
-    //             setFormData({ name: "", phone: "", email: "", service: "", message: "" });
-    //             setSubmitted(false);
-    //         })
-    //         .catch((err) => {
-    //             // console.error('FAILED...', err);
-    //             toast.error("Failed to send. Please check your connection.");
-    //             setSubmitted(false);
-    //         });
-
-    // };
 
     return (
 
