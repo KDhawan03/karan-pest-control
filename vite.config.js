@@ -6,10 +6,11 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/send-email': {
+      '/api': {
         target: 'http://localhost:5000',
-        changeOrigin: true
-      }
-    }
-  }
+        changeOrigin: true,
+        secure:false,
+      },
+    },
+  },
 })

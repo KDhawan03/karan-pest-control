@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { toast } from 'react-hot-toast';
 import img from '/images/get_a_quet.png';
 import { useMouse } from './CursorAnimation/MouseContext';
-// import emailjs from '@emailjs/browser'
 
 export default function GetAQuote() {
     const { cursorChangeHandler } = useMouse();
@@ -39,10 +38,10 @@ export default function GetAQuote() {
 
   
   setSubmitted(true);
-  const API_BASE = import.meta.env.VITE_API_URL || '';
+//   const API_BASE = import.meta.env.VITE_API_URL || '';
 
   try {
-    const response = await fetch(`${API_BASE}/send-email`, {
+    const response = await fetch('/api/server', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -68,6 +67,7 @@ export default function GetAQuote() {
   
   setSubmitted(false);
 };
+
 
 
     // const handleSubmit = (ev) => {
@@ -108,6 +108,7 @@ export default function GetAQuote() {
     //         });
 
     // };
+
 
     return (
 

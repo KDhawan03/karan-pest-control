@@ -4,7 +4,6 @@ import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
 dotenv.config();
 
-dotenv.config();
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -17,7 +16,7 @@ const transporter = nodemailer.createTransport({
     }
 });
 
-app.post('/send-email', async (req, res) => {
+app.post(['/', '/api/server'], async (req, res) => {
   try {
     const { name = 'N/A', phone = 'N/A', email = 'N/A', service = 'N/A', message = '' } = req.body;
     
