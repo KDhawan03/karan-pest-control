@@ -37,6 +37,7 @@ export default function GetAQuote() {
         }
         console.log('📤 SENDING DATA:', formData);
 
+<<<<<<< HEAD
 
         setSubmitted(true);
 
@@ -67,6 +68,39 @@ export default function GetAQuote() {
 
         setSubmitted(false);
     };
+=======
+  
+  setSubmitted(true);
+  const API_BASE = import.meta.env.VITE_API_URL || '';
+
+  try {
+    const response = await fetch(`${API_BASE}/send-email`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: formData.name,
+        phone: formData.phone,
+        email: formData.email,
+        service: formData.service,
+        message: formData.message
+      })
+    });
+     const result = await response.json();
+    console.log('📨 Response:', result);  // ← YE ADD KARO
+    
+    if (response.ok) {
+      toast.success('Request sent! We will contact you soon.');
+      setFormData({ name: "", phone: "", email: "", service: "", message: "" });
+    } else {
+      toast.error("Failed to send. Please check your connection.");
+    }
+  } catch (error) {
+    toast.error("Failed to send. Please check your connection.");
+  }
+  
+  setSubmitted(false);
+};
+>>>>>>> origin/main
 
 
     // const handleSubmit = (ev) => {
