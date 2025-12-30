@@ -73,7 +73,7 @@ const servicesData = [
   //   ......THIRD CARD.......
 
   {
-    id: "3",
+    id: "Bed-Bug-Treatment",
     title: "Bed Bug Treatment",
     // image: "/images/serviceImg3.png",
     icon: "/images/bedbug.png",
@@ -108,7 +108,7 @@ const servicesData = [
 
   // FOURTH CARD - Termite Protection
   {
-    id: "4",
+    id: "Termite-Protection",
     title: "Termite Protection",
     // image: "/images/serviceImg4.png",
     icon: "/images/termite.png",
@@ -143,7 +143,7 @@ const servicesData = [
 
   // FIFTH CARD - Ant & Fly Control
   {
-    id: "5",
+    id: "Ant-Fly-Control",
     title: "Ant & Fly Control",
     // image: "/images/serviceImg5.png",
     icon: "/images/ant.jpg",
@@ -178,7 +178,7 @@ const servicesData = [
 
   // SIXTH CARD - Rat & Rodent Management
   {
-    id: "6",
+    id: "Rat-Rodent-Management",
     title: "Rat & Rodent Management",
     // image: "/images/serviceImg6.png",
     icon: "/images/rat.png",
@@ -213,7 +213,7 @@ const servicesData = [
 
   // SEVENTH CARD - Mosquito Fogging
   {
-    id: "7",
+    id: "Mosquito-Fogging",
     title: "Mosquito Fogging",
     // image: "/images/serviceImg7.png",
     icon: "/images/mosquito.png",
@@ -248,7 +248,7 @@ const servicesData = [
 
   // EIGHTH CARD - Home Disinfection
   {
-    id: "8",
+    id: "Home-Disinfection",
     title: "Home Disinfection",
     // image: "/images/serviceImg8.png",
     icon: "/images/disinfection.png",

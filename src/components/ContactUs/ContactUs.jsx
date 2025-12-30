@@ -7,12 +7,12 @@ import {
 const servicesData = [
   { id: "spider-control", name: "Spider Control" },
   { id: "cockroach-control", name: "Cockroach Control" },
-  { id: 4, name: "Termite Protection" },
-  { id: 5, name: "Ant Control" },
-  { id: 7, name: "Mosquito Fogging" },
-  { id: 8, name: "Home Disinfection" },
-  { id: 3, name: "Bed Bug Control" },
-  { id: 6, name: "Rat & Rodent Management" },
+  { id: "Termite-Protection", name: "Termite Protection" },
+  { id: "Ant-Fly-Control", name: "Ant & Fly Control" },
+  { id: "Mosquito-Fogging", name: "Mosquito Fogging" },
+  { id: "Home-Disinfection", name: "Home Disinfection" },
+  { id: "Bed-Bug-Treatment", name: "Bed Bug Treatment" },
+  { id: "Rat-Rodent-Management", name: "Rat & Rodent Management" },
 ];
 
 const Footer = () => {
@@ -95,7 +95,7 @@ const Footer = () => {
 
           {/* About - Us */}
           <div className="pt-1">
-            <h3 className="font-semibold mb-5 lg:text-center">
+            <h3 className="font-semibold  mb-5 text-center">
               About Us
             </h3>
 
