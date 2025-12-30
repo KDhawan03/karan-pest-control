@@ -55,7 +55,7 @@ const Services = () => {
 
                         <div className="inline-block  rounded-lg w-full g-4 p-4 sm:w-1/2 lg:w-1/4">
                             <ServicesCard
-                                id="3"
+                                id="Bed-Bug-Treatment"
                                 title="Bed Bug Treatment"
                                 description="Effective solutions to eradicate bed bugs and prevent their return."
                                 image="/images/serviceImg3.png"
@@ -64,7 +64,7 @@ const Services = () => {
                         </div>
                         <div className="inline-block  rounded-lg w-full g-4 p-4 sm:w-1/2 lg:w-1/4">
                             <ServicesCard
-                                id="4"
+                                id="Termite-Protection"
                                 title="Termite Protection"
                                 description="Protect your property from structural damage with our advanced termite treatments."
                                 image="/images/serviceImg4.png"
@@ -74,7 +74,7 @@ const Services = () => {
                         </div>
                         <div className="inline-block  rounded-lg w-full g-4 p-4 sm:w-1/2 lg:w-1/4">
                             <ServicesCard
-                                id="5"
+                                id="Ant-Fly-Control"
                                 title="Ant & Fly Control"
                                 description="Managing and eliminating ant and fly populations in and around your space."
                                 image="/images/serviceImg5.png"
@@ -83,7 +83,7 @@ const Services = () => {
                         </div>
                         <div className="inline-block  rounded-lg w-full g-4 p-4 sm:w-1/2 lg:w-1/4">
                             <ServicesCard
-                                id="6"
+                                id="Rat-Rodent-Management"
                                 title="Rat & Rodent Management"
                                 description="Humane and effective rodent control to prevent damage and disease."
                                 image="/images/serviceImg6.png"
@@ -92,7 +92,7 @@ const Services = () => {
                         </div>
                         <div className="inline-block  rounded-lg w-full g-4 p-4 sm:w-1/2 lg:w-1/4">
                             <ServicesCard
-                                id="7"
+                                id="Mosquito-Fogging"
                                 title="Mosquito Fogging"
                                 description="Reduce mosquito populations and protect against mosquito-borne illnesses."
                                 image="/images/serviceImg7.png"
@@ -101,7 +101,7 @@ const Services = () => {
                         </div>
                         <div className="inline-block  rounded-lg  w-full g-4 p-4  sm:w-1/2 lg:w-1/4">
                             <ServicesCard
-                                id="8"
+                                id="Home-Disinfection"
                                 title="Home Disinfection"
                                 description="Sanitizing services to ensure your home is free from germs and pathogens.."
                                 image="/images/serviceImg8.png"
