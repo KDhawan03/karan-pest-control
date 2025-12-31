@@ -1,8 +1,4 @@
 @import "tailwindcss";
-
-body {
-  user-select: none;
-}
 html {
   scroll-behavior: smooth;
 }
